@@ -1,0 +1,23 @@
+[v 0.4.1]
+
+-implement anti idle patches
+-hammering
+-configurable timer
+-extend bookmarks
+-add waiting window
+-bookmark hotkeys
+-reconnect
+-make queues saveable
+-add retries
+-check freebsd patches
+-add translations
+-get rid of eventhandler stuff
+-kb/s for fxp transfers
+
+[v 0.5]
+
+-auto-adjustment for the header
+-add resume to fxp
+-add owner and rights files to browser view
+-choose port range
+-extend the app to more than 2 sessions

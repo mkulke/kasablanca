@@ -1,0 +1,131 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KasablancaColorsPreferencesDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>KasablancaColorsPreferencesDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>241</width>
+            <height>183</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Colors</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="text">
+                <string>Background:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel1_3_3</cstring>
+            </property>
+            <property name="text">
+                <string>Success Text:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>textLabel1_3</cstring>
+            </property>
+            <property name="text">
+                <string>Failure Text:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>textLabel1_3_2</cstring>
+            </property>
+            <property name="text">
+                <string>Local Text:</string>
+            </property>
+        </widget>
+        <spacer row="0" column="1" rowspan="3" colspan="1">
+            <property name="name">
+                <cstring>spacer3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>30</width>
+                    <height>60</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="KColorButton" row="2" column="2">
+            <property name="name">
+                <cstring>kcfg_FailureColor</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="KColorButton" row="1" column="2">
+            <property name="name">
+                <cstring>kcfg_SuccessColor</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="KColorButton" row="3" column="2">
+            <property name="name">
+                <cstring>kcfg_LocalColor</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="KColorButton" row="0" column="2">
+            <property name="name">
+                <cstring>kcfg_BackgroundColor</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <spacer row="4" column="1">
+            <property name="name">
+                <cstring>spacer5</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>31</width>
+                    <height>30</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+    <includehint>kcolorbutton.h</includehint>
+</includehints>
+</UI>

@@ -1,0 +1,342 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kasablanca "<application>kasablanca 0&#46;4</application>">
+  <!ENTITY kappname "&kasablanca;"><!-- Do *not* replace kappname-->
+  <!ENTITY package "kde-module"><!-- kdebase, kdeadmin, etc -->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"><!-- change language only here -->
+  
+  
+  <!-- Do not define any other entities; instead, use the entities
+       from kde-genent.entities and $LANG/user.entities. -->
+]>
+<!-- kdoctemplate v0.8 October 1 1999 
+     Minor update to "Credits and Licenses" section on August 24, 2000
+     Removed "Revision history" section on 22 January 2001
+     Changed to Installation/Help menu entities 18 October 2001
+     Other minor cleanup and changes 18 October 2001 -->
+
+
+<!--
+This template was designed by: David Rugge davidrugge@mindspring.com
+with lots of help from: Eric Bischoff ebisch@cybercable.tm.fr
+and Frederik Fouvry fouvry@sfs.nphil.uni-tuebingen.de
+of the KDE DocBook team.
+
+You may freely use this template for writing any sort of KDE documentation.
+If you have any changes or improvements, please let us know.
+
+Remember:
+- in XML, the case of the <tags> and attributes is relevant ;
+- also, quote all attributes.
+
+Please don't forget to remove all these comments in your final documentation,
+thanks ;-).
+-->
+
+<!-- ................................................................ -->
+
+<!-- The language must NOT be changed here. -->
+
+<book lang="&language;">
+
+<!-- This header contains all of the meta-information for the document such
+as Authors, publish date, the abstract, and Keywords -->
+
+<bookinfo>
+<title>The &kasablanca; Handbook</title>
+
+<authorgroup>
+<author>
+<firstname></firstname>
+<othername></othername>
+<surname>Magnus Kulke</surname>
+<affiliation>
+<address><email>sikor_sxe&#64;radicalapproach.de</email></address>
+</affiliation>
+</author>
+</authorgroup>
+
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+
+<copyright>
+<year>1999</year>
+<year>2004</year>
+<holder>Magnus Kulke</holder>
+</copyright>
+<!-- Translators: put here the copyright notice of the translation -->
+<!-- Put here the FDL notice.  Read the explanation in fdl-notice.docbook
+     and in the FDL itself on how to use it. -->
+<legalnotice>&FDLNotice;</legalnotice>
+
+<!-- Date and version information of the documentation
+Don't forget to include this last date and this last revision number, we
+need them for translation coordination !
+Please respect the format of the date (YYYY-MM-DD) and of the version
+(V.MM.LL), it could be used by automation scripts.
+Do NOT change these in the translation. -->
+
+<date>2004-7-13</date>
+<releaseinfo>0&#46;4</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para>
+&kasablanca; is an ftp client, written in c++, using the kde libraries. among its features are
+currently encryption (auth tls) support, fxp, site bookmarks, and queued transfers.
+</para>
+</abstract>
+
+<!-- This is a set of Keywords for indexing by search engines.
+Please at least include KDE, the KDE package it is in, the name
+ of your application, and a few relevant keywords. -->
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>kasablanca</keyword>
+<keyword>nothing</keyword>
+<keyword>nothing else</keyword>
+</keywordset>
+
+</bookinfo>
+
+<!-- The contents of the documentation begin here.  Label
+each chapter so with the id attribute. This is necessary for two reasons: it
+allows you to easily reference the chapter from other chapters of your
+document, and if there is no ID, the name of the generated HTML files will vary
+from time to time making it hard to manage for maintainers and for the CVS
+system. Any chapter labelled (OPTIONAL) may be left out at the author's
+discretion. Other chapters should not be left out in order to maintain a
+consistent documentation style across all KDE apps. -->
+
+<chapter id="Helpusing-kasablanca">
+<title>Using &kasablanca;</title>
+
+<!-- This chapter should tell the user how to use your app. You should use as
+many sections (Chapter, Sect1, Sect3, etc...) as is necessary to fully document
+your application. -->
+
+<sect1 id="globalhelp">
+<title>Global Settings</title>
+<para>The settings which concern the behaviour of the whole application.</para>
+
+<sect2>
+<title>Skiplist</title>
+<para>
+Here you can enter a Regular Expression. Transfer items which match this Regular Expression are skipped. For example a value of "^\." excludes every entry beginning with "." from transfer.
+</para>
+</sect2>
+
+<sect2>
+<title>On queue finished</title>
+<para>
+This field can hold an executable and its arguments which will be run, when last item of in queue has finished transferring. For Example, on KDE desktops the entry "dcop ksmserver ksmserver logout 0 0 0" would shutdown the computer automatically.
+</para>
+</sect2>
+
+<sect2>
+<title>On file exists</title>
+<para>
+These Radio Buttons indicate how the application should proceed if a file to be transfered already exists on the destination. Usually the user is asked by the application how to proceed if this occurs, in case you aren't present during the transfer you can enable this feature.
+</para>
+</sect2>
+
+<sect2>
+<title>Priority List</title>
+<para>
+This Field contains a regular expression, which queues the items matching this regular expression before the items which don't. For example, ".sfv" would make the common checksum files with this fileending transfer first.
+</para>
+</sect2>
+
+</sect1>
+
+<sect1 id="ftphelp">
+<title>Ftp Server Settings</title>
+<para>The settings which can be applied to an ftp session are described here.</para>
+
+<sect2>
+<title>Name</title>
+<para>
+The ftp's name is entered here.
+</para>
+</sect2>
+
+<sect2>
+<title>Host:Port</title>
+<para>
+This information points to the the ftp server. HOST can either be a standard ip adress like 192.168.2.1 or a domain name. PORT is the port number on which the ftp server listens. In most cases this is 21. Both are seperated by a ":" character. A legit input would be "ftp.kde.org:21".
+</para>
+</sect2>
+
+<sect2>
+<title>Username</title>
+<para>
+The ftp Login Username. On open ftp servers you usually login using "anonymous".
+</para>
+</sect2>
+
+<sect2>
+<title>Password</title>
+<para>
+The user's password. Anonymous ftp servers ussually don't use passwords or accept passwords in the form of "user@emailaddress.com".
+</para>
+</sect2>
+
+<sect2>
+<title>Encryption</title>
+<para>
+There are 4 encryption levels available. Unencrypted leaves all traffic clear and without encryption. Most ftp servers allow only this mode. Level 1 encryption means that the traffic on the control connection is encrypted while data transfer remains clear. Level 2 is basically the same with the exception of directory information which is transfered on the data channel, but is encrypted too. Eventually Level 3 encrypts everything all communication and all data traffic.
+</para>
+</sect2>
+
+<sect2>
+<title>Mode</title>
+<para>
+The mode you are using for data transfer. This is quite important in case you're behind a firewall or a router. In these cases you depend on the passive mode, which makes the client connects to the ftp server for data transfer. Passive mode is the standard method today, while active mode is the old way to do data transfers, the client listens for the server to connect in active mode.
+</para>
+</sect2>
+
+<sect2>
+<title>Mode</title>
+<para>
+The mode you are using for data transfer. This is quite important in case you're behind a firewall or a router. In these cases you depend on the passive mode, which makes the client connects to the ftp server for data transfer. Passive mode is the standard method today, while active mode is the old way to do data transfers, the client listens for the server to connect in active mode.
+</para>
+</sect2>
+
+<sect2>
+<title>Default directory</title>
+<para>
+Here you can type in a path which kasablanca attempts to enter after login.
+</para>
+</sect2>
+
+<sect2>
+<title>Alternative fxp</title>
+<para>
+Some ftp servers have problems with either active or pasv mode, which is needed for fxp. Using alternative fxp might help in such cases.
+</para>
+</sect2>
+
+<sect2>
+<title>Correct pasv responses</title>
+<para>
+When ftp servers are behind a router (NAT) they sometimes send wrong pasv responses containing their local IP. This option changes the IP value in pasv responses to the IP you connected to (most likely the servers router).
+</para>
+</sect2>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+
+<!-- Include credits for the programmers, documentation writers, and
+contributors here. The license for your software should then be included below
+the credits with a reference to the appropriate license file included in the KDE
+distribution. -->
+
+<title>Credits and License</title>
+
+<para>
+&kasablanca;
+</para>
+<para>
+Program copyright 2004 Magnus Kulke <email>sikor_sxe&#64;radicalapproach.de</email>
+</para>
+<para>
+Contributors:
+<itemizedlist>
+<listitem><para>Big Biff<email>bigbiff&#64;chunkyfilms.org</email></para>
+</listitem>
+<listitem><para>Stefan Bogner<email>bochi@online.ms</email></para>
+</listitem>
+</itemizedlist>
+</para>
+
+<para>
+Documentation copyright 2004 Magnus Kulke <email>sikor_sxe&#64;radicalapproach.de</email>
+</para>
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+
+&underFDL;               <!-- FDL: do not remove -->
+
+<!-- Determine which license your application is licensed under, 
+     and delete all the remaining licenses below:
+
+     (NOTE:  All documentation are licensed under the FDL, 
+     regardless of what license the application uses) -->
+
+&underGPL;        	 <!-- GPL License -->
+
+</chapter>
+
+<appendix id="installation">
+<title>Installation</title>
+
+<sect1 id="getting-kasablanca">
+<title>How to obtain &kasablanca;</title>
+
+<para>
+The most recent sources are available at <ulink url="http://kasablanca.berlios.de">http://kasablanca.berlios.de</ulink>.
+</para>
+<!-- This first entity contains boiler plate for applications that are
+part of KDE CVS.  You should remove it if you are releasing your
+application --> 
+
+<para>
+In order to use &kasablanca;, you need at least &kde; 3.2. a recent version of OpenSSL is
+required also.
+</para>
+
+</sect1>
+
+<sect1 id="requirements">
+<title>Requirements</title>
+
+<!--
+List any special requirements for your application here. This should include:
+.Libraries or other software that is not included in kdesupport,
+kdelibs, or kdebase.
+.Hardware requirements like amount of RAM, disk space, graphics card
+capabilities, screen resolution, special expansion cards, etc.
+.Operating systems the app will run on. If your app is designed only for a
+specific OS, (you wrote a graphical LILO configurator for example) put this
+information here.
+-->
+
+<para>
+In order to use &kasablanca;, you need at least &kde; 3.2. A recent version of OpenSSL is
+required also.
+</para>
+
+</sect1>
+
+<sect1 id="compilation">
+<title>Compilation and Installation</title>
+
+<!-- This entity contains the boilerplate text for standard -->
+<!-- compilation instructions.  If your application requires any -->
+<!-- special handling, remove it, and replace with your own text. -->
+
+&install.compile.documentation;
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->
+

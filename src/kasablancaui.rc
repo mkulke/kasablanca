@@ -1,0 +1,13 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kasablanca" version="1">
+<MenuBar>
+<Menu name="bookmarks menu"><text>Bookmarks</text>
+    <Action name="edit bookmarks action" />
+		<Action name="import bookmarks action" />
+</Menu>
+<Menu name="connect menu"><text>Connect</text>
+</Menu>
+<Menu name="action menu"><text>Action</text>
+</Menu>
+</MenuBar>
+</kpartgui>

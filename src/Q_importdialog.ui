@@ -1,0 +1,49 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KasablancaImportDialog</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>KasablancaImportDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>231</width>
+            <height>80</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Import Bookmarks</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QButtonGroup" row="0" column="0">
+            <property name="name">
+                <cstring>ImportGroupBox</cstring>
+            </property>
+            <property name="title">
+                <string>Import filter</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>GftpRadioButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>gFtp</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

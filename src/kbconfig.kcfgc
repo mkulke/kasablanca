@@ -1,0 +1,4 @@
+File=kbconfig.kcfg
+ClassName=KbConfig
+Singleton=true 
+Mutators=true

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd"> 
+<kcfg> <kcfgfile name="kasablancarc"/> 
+	<group name="general"> 
+		<entry name="Skiplist" type="String"> 
+			<label>A RegExp which describes the items to skip at transfer.</label>  
+		</entry>
+		<entry name="Prioritylist" type="String"> 
+			<label>A RegExp which describes the items to transfer first.</label>  
+		</entry>
+		<entry name="DirCachingIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="DeleteMovesIntoTrashIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="SkiplistIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="PrioritylistIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="OnQueueFinished" type="String"/>
+		<entry name="OnQueueFinishedIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="OnFileExistsOverwrite" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="OnFileExistsResume" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="OnFileExistsSkip" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="OnFileExistsIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+	</group>  
+	<group name="ui">
+		<entry name="SystrayIsEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="CommandLineIsEnabled" type="Bool">
+      	<default>true</default>
+      </entry>
+		<entry name="HideHiddenFilesIsEnabled" type="Bool">
+      	<default>false</default>
+      </entry>
+		<entry name="LogwindowFont" type="Font">
+			<label>The font for the logwindow.</label>
+			<default>QFont( "DEC Terminal" )</default>
+		</entry>
+	</group>
+	<group name="colors">
+		<entry name="LocalColor" type="Color">
+			<label>The color value for local messages on the logging window.</label>
+			<default>244,247,66</default>
+		</entry>
+		<entry name="SuccessColor" type="Color">
+			<label>The color value for successful remote messages on the logging window.</label>
+			<default>0,188,53</default>
+		</entry>
+		<entry name="BackgroundColor" type="Color">
+			<label>The color value for the background on the logging window.</label>
+			<default>0,90,128</default>
+		</entry>
+		<entry name="FailureColor" type="Color">
+			<label>The color value for failed remote messages on the logging window.</label>
+			<default>222,9,48</default>
+		</entry>
+	</group>
+</kcfg>

@@ -1,0 +1,16 @@
+Begin3
+Title:          kasablanca -- Some description
+Version:        0.3
+Entered-date:   
+Description:    
+Keywords:       KDE Qt
+Author:         Magnus Kulke <mkulke@magnusmachine>
+Maintained-by:  Magnus Kulke <mkulke@magnusmachine>
+Home-page:      
+Alternate-site: 
+Primary-site:   ftp://ftp.kde.org/pub/kde/unstable/apps/utils
+                xxxxxx  kasablanca-0.3.tar.gz
+                xxx     kasablanca-0.3.lsm
+Platform:       Linux. Needs KDE
+Copying-policy: GPL
+End

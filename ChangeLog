@@ -1,0 +1,107 @@
+[v 0.4.0.2]
+
+-changed: changed the local dir deletion functionality for a
+ profane call to "rm".
+-added: hour and minute is now taken into respect when
+ sorting by date
+-fixed: finally files bigger than 2gb should be supported on
+ machines which support LFS
+-fixed: crash when transfering files on a timed-out server
+-changed: view of the transfered files
+-added: a little fancyness and improvements
+-fixed: percentage counting bug
+-added: delete key shortcut bookmarks [r. stellingwerff]
+-fixed: several bugs in ftplibpp
+
+[v 0.4.0.1]
+
+-changed: reduced cpu usage quite a bit again
+-added: status tooltip for systray icon
+-fixed: correct-pasv bug
+-fixed: evil flaw in local delete method, added option to move 
+ files into trash instead
+-added: import gftp bookmarks [crissi]
+-added: polish translation [tomwal]
+-fixed: compilation error
+-fixed: filesize issues, files bigger than 2GB should be 
+ supported now
+-changed: some changes to the bookmark editor
+-changed: improved directory caching
+-added: auto-completion in the lineedits
+-changed: items are queued at the end of the queue list now
+-changed: remember sorting preference when changing directories
+-changed: report when ftp servers do not support encryption
+-fixed: crash when trying to remove active item from queue
+-fixed: compilation with gcc 2.95
+
+[v 0.4]
+
+-added german translation
+-directory caching added
+-added documentation and help buttons
+-option to hide hidden files from view
+-added bookmark current site option
+-priority list functionality implemented
+-bookmarks can be re-arranged now
+-correct pasv replies can be set for single sites now
+-added advanced settings to custom sites
+-rewrote bookmark implementation
+-representation of sitenames in statusbar
+
+[v 0.4 pre3]
+
+-configure log window font [bochi]
+-added some explanations to the config and bookmark dialogs
+-define standard directory in bookmarks
+-support alternative fxp
+-added systray support [bochi]
+-added drag and drop movement in queue
+-password is masked in log window
+-added an option to correct wrong pasv replies
+-fixed bug when cancelling rename
+
+[v 0.4 pre2]
+
+-fixed NASTY bug when fxp transfers failed.
+-~.kde/share/apps/kasablanca/ is now used instead of ~.kasablanca/
+-fixed problem with no remote directory appearing
+-fixed flickering when queuing items
+-speed improvements for handling large directories 
+-fixed bookmark handling
+-kb/s display now reflects the current speed rather than the speed over all the file
+-changed log colouring according to response codes
+-added reasonable default settings
+-fixed (rare) issue when 2 remote directories are loaded at the same time
+-added .pot file for translations
+-new settings on-queue-finished
+-settings can be enable or disabled now
+-on-file-exist setting added
+
+[v 0.4 pre1b]
+
+-fixed the problem with the ui files not working with qt 3.2
+
+[v 0.4 pre1]
+
+-moved to a multithreaded architecture
+-reorganized and cleaned up code
+-further kde integration
+-new stable transfer code
+-new queue handling
+-implemented a skiplist
+-made the colors of the logwindow configurable
+-added support for local copy
+-added recursive directory deletion
+-overall stability improved
+-fixed bugs
+
+[v 0.3.1]
+
+-added fxp support
+-fixed spaces-in-filenames bug
+-reduced cpu usage
+-tons of minor and major fixes
+-added tooltip help in dialogs
+-fixed xfer/rename bug
+-fixed tab order on dialogs
+-big user interface changes. both browser windows can be switched on or offline

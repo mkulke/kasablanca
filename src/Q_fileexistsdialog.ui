@@ -1,0 +1,118 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KasablancaFileExistsDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>KasablancaFileExistsDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>514</width>
+            <height>57</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>File Exists</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>2</number>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QPushButton" row="0" column="3">
+            <property name="name">
+                <cstring>SkipButton</cstring>
+            </property>
+            <property name="text">
+                <string>Skip</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="1">
+            <property name="name">
+                <cstring>ResumeButton</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Resume</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="2">
+            <property name="name">
+                <cstring>RenameButton</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Rename</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="0">
+            <property name="name">
+                <cstring>OverwriteButton</cstring>
+            </property>
+            <property name="text">
+                <string>Overwrite</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>SkipButton</sender>
+        <signal>clicked()</signal>
+        <receiver>KasablancaFileExistsDialog</receiver>
+        <slot>Skip()</slot>
+    </connection>
+    <connection>
+        <sender>OverwriteButton</sender>
+        <signal>clicked()</signal>
+        <receiver>KasablancaFileExistsDialog</receiver>
+        <slot>Overwrite()</slot>
+    </connection>
+    <connection>
+        <sender>ResumeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>KasablancaFileExistsDialog</receiver>
+        <slot>Resume()</slot>
+    </connection>
+    <connection>
+        <sender>RenameButton</sender>
+        <signal>clicked()</signal>
+        <receiver>KasablancaFileExistsDialog</receiver>
+        <slot>Rename()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>OverwriteButton</tabstop>
+    <tabstop>ResumeButton</tabstop>
+    <tabstop>RenameButton</tabstop>
+    <tabstop>SkipButton</tabstop>
+</tabstops>
+<slots>
+    <slot>Skip()</slot>
+    <slot>Overwrite()</slot>
+    <slot>Resume()</slot>
+    <slot>Rename()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

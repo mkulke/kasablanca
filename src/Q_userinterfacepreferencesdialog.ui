@@ -1,0 +1,142 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KasablancaUserInterfacePreferencesDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>KasablancaUserInterfacePreferencesDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>448</width>
+            <height>165</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>User Interface</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <spacer row="4" column="3">
+            <property name="name">
+                <cstring>spacer4</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1_2_2_2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Show system tray icon:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1_2_2_2_2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Show command lines:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textLabel1_2_2_2_2_2_3</cstring>
+            </property>
+            <property name="text">
+                <string>Hide hidden files from view:</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="0" column="4">
+            <property name="name">
+                <cstring>kcfg_SystrayIsEnabled</cstring>
+            </property>
+            <property name="text">
+                <string>Enabled</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="1" column="4">
+            <property name="name">
+                <cstring>kcfg_CommandLineIsEnabled</cstring>
+            </property>
+            <property name="text">
+                <string>Enabled</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="2" column="4">
+            <property name="name">
+                <cstring>kcfg_HideHiddenFilesIsEnabled</cstring>
+            </property>
+            <property name="text">
+                <string>Enabled</string>
+            </property>
+        </widget>
+        <widget class="KFontRequester" row="3" column="2" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>kcfg_LogwindowFont</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>textLabel1_2_2_2_2_2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Logwindow Font:</string>
+            </property>
+        </widget>
+        <spacer row="0" column="2" rowspan="2" colspan="2">
+            <property name="name">
+                <cstring>spacer3</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>140</width>
+                    <height>58</height>
+                </size>
+            </property>
+        </spacer>
+        <spacer row="3" column="1">
+            <property name="name">
+                <cstring>spacer3_2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kfontrequester.h</includehint>
+</includehints>
+</UI>
